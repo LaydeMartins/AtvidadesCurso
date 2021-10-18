@@ -1,0 +1,94 @@
+public static void main(String[] args) {
+
+int anoNascimento ;
+int anoAtual= 2021;
+int desco16=50;
+int desco21=20;
+int idade ;
+
+String msg = ("\tCinemas Laydes Martins");
+String msg1= "Lista de Filmes.";
+String menu = "\tFilmes\t";
+int Valor16 = 30;
+int valor21 = 30;
+int valor22 = 30;
+int opcao1 = 1;
+int opcao2 = 2;
+int opcao3 = 3;
+
+int opcao4 = 4;
+
+System.out.println(msg);
+System.out.println(msg1);
+
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Selecione o filme de acordo com a numeração: ");
+System.out.println(menu);
+System.out.println("\t 1 - Velozes e Furiosos 9 \t");
+System.out.println("\t 2 - Barraca do beijo \t");
+System.out.println("\t 3 - Patrulha Canina o filme \t");
+System.out.println("\t 4 - Minions 3 \t");
+System.out.println("\n Digite o numeo aqui: ");
+int opcao = teclado.nextInt();
+
+switch(opcao){
+case 1:{
+opcao = opcao1;
+System.out.println(" Velozes e Furiosos 9");
+break;
+}
+case 2:{
+opcao= opcao2;
+System.out.println(" Barraca do Beijo ");
+break;
+}
+case 3:{
+opcao=opcao3;
+
+System.out.println(" Parulha Canina ");
+break;
+}
+default:
+System.out.print("\nOpção Inválida!");
+break;
+
+case 4:{
+opcao=opcao4;
+System.out.println(" Minions ");
+break;
+}
+
+}
+System.out.print("\nO Filme escolhido estabelece o estatuto"
++ "\t\nda criança e do adolescente."
++ "\t\n a LEI No 8.069, DE 13 DE JULHO DE 1990 por favor! "
++ "\t\nInforme seu ano de nascimento: ");
+int idadetec = teclado.nextInt();
+
+idade = anoAtual - idadetec ;
+
+int resultado16 = (Valor16*desco16)/100;
+int resultado21 = (valor21*desco21)/100;
+
+if(idade <=16 ){
+System.out.print("Sua idade é de" +idade+ "anos");
+System.out.println("você tem 50% de desconto no seu ingresso."
++"\nO valor é de " +resultado16+ "R$" );
+}
+
+if(idade>=17&&idade<=21){
+System.out.println("Sua idade é" +idade+ "anos");
+System.out.println("Voce tem 20% de desconto no seu ingresso.");
+System.out.println("Seu ingresso custa" +resultado21+ "R$");
+
+}
+2
+if(idade >=22){
+System.out.println("Voce não te direito aos desconto por "
++ "\tter" +idade+"anos ndescontos validos somente para"
++ "\t\nmenoes de 21 anos\");");
+System.out.println("Seu ingresso custa 30 R$");
+}
+
+}
