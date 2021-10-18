@@ -1,0 +1,23 @@
+ic class TelhadoCaibro {
+
+public static void main(String[] args) {
+Scanner tc= new Scanner(System.in);
+double altura,largura,caibro ;
+double valor ;
+double div2;
+
+String mensagem="Dẽ os dados do telhado; ";
+System.out.println("\n" +mensagem+"\n");
+System.out.println("Infome a largura do telhado:");
+
+largura= tc.nextDouble();
+
+div2= largura/2;
+
+System.out.println("Informe a altura do telhado;");
+
+altura= tc.nextDouble();
+valor = Math.sqrt(altura*altura+div2*div2);
+System.out.println("O caibro terá o tamanho de "+valor+"m");
+
+}
