@@ -1,0 +1,39 @@
+public class Mediadoaluno {
+* @param args the command line arguments*/
+
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+
+float media;
+String nomeAluno,serie;
+float nota1f, nota2f, nota3f;
+
+String Mensagem = "Tabela de media de notas";
+System.out.println(Mensagem);
+System.out.println("Informe o nome do aluno: ");
+
+nomeAluno = input.next();
+
+System.out.println("Informe a serie do aluno: ");
+
+serie=input.next();
+
+System.out.println("Informe a 1Âonota :");
+nota1f=input.nextFloat();
+System.out.println("Infome a 2Âo nota :");
+nota2f=input.nextFloat();
+System.out.println("Infome a 3Âonota :");
+nota3f=input.nextFloat();
+media = (nota1f + nota2f + nota3f) /3;
+
+if(media >= 7){
+
+System.out.println("Aprovado");
+
+}else{
+
+System.out.println("Reprovado");
+
+}
+
+System.out.println ( nomeAluno + "sua nota Ã© " + media ); }
